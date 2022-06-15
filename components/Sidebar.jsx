@@ -9,7 +9,7 @@ import { AiOutlineHistory } from "react-icons/ai";
 
 import logo from "../assets/amazon_logo.png";
 import logoFull from "../assets/amazon_logo_full.png";
-// import { AmazonContext } from "../context/Amazon.context"
+import { AmazonContext } from "../context/Amazon.context";
 
 const Sidebar = () => {
   const styles = {
@@ -28,18 +28,19 @@ const Sidebar = () => {
     setNickname: `text-lg font-bold flex flex-1 items-center mt-[20px] mb-[20px] text-white`,
   };
 
-  //   const {
-  //     isAuthenticated,
-  //     username,
-  //     setUsername,
-  //     nickname,
-  //     handleSetUsername,
-  //     setNickname,
-  //   } = useContext(AmazonContext);
+  const {
+    isAuthenticated,
+    username,
+    setUsername,
+    nickname,
+    handleSetUsername,
+    setNickname,
+  } = useContext(AmazonContext);
+  //   console.log(amazonContext);
 
-  //   console.log(isAuthenticated, username, nickname);
-  const isAuthenticated = true;
-  const username = "ishaan";
+  console.log(isAuthenticated, username, nickname);
+  //   const isAuthenticated = true;
+  //   const username = "ishaan";
 
   return (
     <div className={styles.container} suppressHydrationWarning>
