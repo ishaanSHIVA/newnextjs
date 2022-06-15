@@ -1,4 +1,4 @@
-import Main from "../components/Main.jsx";
+// import Main from "../components/Main.jsx";
 import Sidebar from "../components/SideBar.jsx";
 
 const styles = {
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Sidebar />
-      <Main />
+      {/* <Main /> */}
     </div>
   );
 }
