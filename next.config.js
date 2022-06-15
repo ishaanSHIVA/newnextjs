@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  future: { webpack5: true },
   env: {
     NEXT_MORALIS_SERVER: process.env.NEXT_MORALIS_SERVER,
     NEXT_PUBLIC_MORALIS_APP_ID: process.env.NEXT_PUBLIC_MORALIS_APP_ID,
